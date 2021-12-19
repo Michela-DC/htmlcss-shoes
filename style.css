@@ -20,6 +20,7 @@ nav ul{
     right: 0;
     top: 10px;
     font-size: calc(3vh + 20px);
+    z-index: 10;
 }
 
 nav ul li{
@@ -41,6 +42,7 @@ nav ul li a{
 main .container{
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 main .container:nth-child(1){
@@ -54,5 +56,37 @@ main .container:nth-child(2){
 main .container:nth-child(3){
     background-color: yellow;
 }
+
+.container .card-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.container .card-wrapper img{
+    width: 70%;
+    display:block;
+    margin: 0 auto;
+}
+
+.shoes-info{
+    font-size: calc(2vw + 20px); 
+    text-transform: uppercase;
+    text-align: center;
+    width: 55%;
+    margin: 0 auto; 
+}
+
+.container:nth-child(1), .container:nth-child(2){
+    color: yellow;
+}
+
+.container:last-child{
+    color: green;
+}
+
+
 
 
